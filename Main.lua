@@ -100,7 +100,7 @@ TextLabel.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel.BorderSizePixel = 0
 TextLabel.Size = UDim2.new(0, 548, 0, 32)
 TextLabel.Font = Enum.Font.FredokaOne
-TextLabel.Text = "KALI-YUGA SNIPER ARENA GUI"
+TextLabel.Text = "KALI-YUGA AIM GUI"
 TextLabel.TextColor3 = Color3.new(0.0705882, 0.0392157, 0.423529)
 TextLabel.TextSize = 23
 
