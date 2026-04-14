@@ -9,72 +9,66 @@
 
 -- Instances
 
-local ScreenGui = Instance.new("ScreenGui")
 local MAINFRAME = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
+local OPENED = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
-local UICorner_3 = Instance.new("UICorner")
-local Toggle = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local Toggle = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
-local Toggle_2 = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
 local TextButton_2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Toggle_2 = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
 local Frame_3 = Instance.new("Frame")
 local TextLabel_3 = Instance.new("TextLabel")
-local UICorner_8 = Instance.new("UICorner")
-local RadiusBox = Instance.new("TextBox")
 local UICorner_9 = Instance.new("UICorner")
-local SmoothBox = Instance.new("TextBox")
+local RadiusBox = Instance.new("TextBox")
 local UICorner_10 = Instance.new("UICorner")
-local Toggle_3 = Instance.new("Frame")
+local SmoothBox = Instance.new("TextBox")
 local UICorner_11 = Instance.new("UICorner")
-local TextButton_3 = Instance.new("TextButton")
+local Toggle_3 = Instance.new("Frame")
 local UICorner_12 = Instance.new("UICorner")
-local TextLabel_4 = Instance.new("TextLabel")
-local UICorner_13 = Instance.new("UICorner")
-local Toggle_4 = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
 local TextButton_4 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_14 = Instance.new("UICorner")
+local BindBox = Instance.new("TextBox")
 local UICorner_15 = Instance.new("UICorner")
-local TextLabel_5 = Instance.new("TextLabel")
+local CLOSED = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
-local HeadBtn = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
-local TorsoBtn = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local HeadBtn = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
-local LeftArmBtn = Instance.new("TextButton")
+local TorsoBtn = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
-local RightLegBtn = Instance.new("TextButton")
+local LeftArmBtn = Instance.new("TextButton")
 local UICorner_20 = Instance.new("UICorner")
-local LeftLegBtn = Instance.new("TextButton")
+local RightLegBtn = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
-local RightArmBtn = Instance.new("TextButton")
+local LeftLegBtn = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
-local DistanceBox = Instance.new("TextBox")
+local RightArmBtn = Instance.new("TextButton")
 local UICorner_23 = Instance.new("UICorner")
-local RadiusCircle = Instance.new("Frame")
-local UICorner_24 = Instance.new("UICorner")
 
 -- Properties
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
-
 MAINFRAME.Name = "MAIN FRAME"
-MAINFRAME.Parent = ScreenGui
+MAINFRAME.Parent = game.StarterGui.ScreenGui
 MAINFRAME.BackgroundColor3 = Color3.new(0.0705882, 0.0392157, 0.423529)
 MAINFRAME.BorderColor3 = Color3.new(0, 0, 0)
 MAINFRAME.BorderSizePixel = 0
-MAINFRAME.ClipsDescendants = true
-MAINFRAME.Position = UDim2.new(0.315586805, 556, -0.230597928, 408)
+MAINFRAME.Position = UDim2.new(0.165953547, 556, -0.169177309, 408)
 MAINFRAME.Size = UDim2.new(0, 548, 0, 381)
 
 UICorner.Parent = MAINFRAME
@@ -84,28 +78,51 @@ Frame.Parent = MAINFRAME
 Frame.BackgroundColor3 = Color3.new(0.0784314, 0.247059, 1)
 Frame.BorderColor3 = Color3.new(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0, 0, 0.0524934381, 0)
-Frame.Size = UDim2.new(0, 24, 0, 12)
+Frame.Position = UDim2.new(0, 0, 0.0314960629, 0)
+Frame.Size = UDim2.new(0, 24, 0, 20)
 
 Frame_2.Parent = MAINFRAME
 Frame_2.BackgroundColor3 = Color3.new(0.0784314, 0.247059, 1)
 Frame_2.BorderColor3 = Color3.new(0, 0, 0)
 Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.956204355, 0, 0.0524934381, 0)
-Frame_2.Size = UDim2.new(0, 24, 0, 12)
+Frame_2.Position = UDim2.new(0.956204355, 0, 0.0314960629, 0)
+Frame_2.Size = UDim2.new(0, 24, 0, 20)
 
-TextLabel.Parent = MAINFRAME
+OPENED.Name = "OPENED"
+OPENED.Parent = MAINFRAME
+OPENED.BackgroundColor3 = Color3.new(0.0784314, 0.247059, 1)
+OPENED.BorderColor3 = Color3.new(0, 0, 0)
+OPENED.BorderSizePixel = 0
+OPENED.Position = UDim2.new(0.0018248175, 0, 0, 0)
+OPENED.Size = UDim2.new(0, 547, 0, 32)
+
+UICorner_2.Parent = OPENED
+UICorner_2.CornerRadius = UDim.new(1, 0)
+
+TextButton.Parent = OPENED
+TextButton.BackgroundColor3 = Color3.new(0.0705882, 0.0392157, 0.423529)
+TextButton.BorderColor3 = Color3.new(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.924594045, 0, -0.0200004578, 0)
+TextButton.Size = UDim2.new(0, 32, 0, 31)
+TextButton.Font = Enum.Font.FredokaOne
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.new(0.0784314, 0.247059, 1)
+TextButton.TextSize = 33
+
+UICorner_3.Parent = TextButton
+
+TextLabel.Parent = OPENED
 TextLabel.BackgroundColor3 = Color3.new(0.0784314, 0.247059, 1)
+TextLabel.BackgroundTransparency = 1
 TextLabel.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(0, 548, 0, 32)
+TextLabel.Position = UDim2.new(0.005391513, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 329, 0, 32)
 TextLabel.Font = Enum.Font.FredokaOne
-TextLabel.Text = "KALI-YUGA AIM GUI"
+TextLabel.Text = "KALI-YUGA SNIPER ARENA GUI"
 TextLabel.TextColor3 = Color3.new(0.0705882, 0.0392157, 0.423529)
 TextLabel.TextSize = 23
-
-UICorner_2.Parent = TextLabel
-UICorner_2.CornerRadius = UDim.new(0, 20)
 
 TextLabel_2.Parent = MAINFRAME
 TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -119,8 +136,8 @@ TextLabel_2.Text = "ESP"
 TextLabel_2.TextColor3 = Color3.new(0.0784314, 0.247059, 1)
 TextLabel_2.TextSize = 32
 
-UICorner_3.Parent = TextLabel_2
-UICorner_3.CornerRadius = UDim.new(0, 20)
+UICorner_4.Parent = TextLabel_2
+UICorner_4.CornerRadius = UDim.new(0, 20)
 
 Toggle.Name = "Toggle"
 Toggle.Parent = MAINFRAME
@@ -130,35 +147,10 @@ Toggle.BorderSizePixel = 0
 Toggle.Position = UDim2.new(0.186131388, 0, 0.112860896, 0)
 Toggle.Size = UDim2.new(0, 60, 0, 35)
 
-UICorner_4.Parent = Toggle
-UICorner_4.CornerRadius = UDim.new(1, 0)
-
-TextButton.Parent = Toggle
-TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
-TextButton.BorderColor3 = Color3.new(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.415665686, 0, 0, 0)
-TextButton.Size = UDim2.new(0, 35, 0, 35)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = ""
-TextButton.TextColor3 = Color3.new(0, 0, 0)
-TextButton.TextSize = 14
-
-UICorner_5.Parent = TextButton
+UICorner_5.Parent = Toggle
 UICorner_5.CornerRadius = UDim.new(1, 0)
 
-Toggle_2.Name = "Toggle"
-Toggle_2.Parent = MAINFRAME
-Toggle_2.BackgroundColor3 = Color3.new(1, 0, 0)
-Toggle_2.BorderColor3 = Color3.new(0, 0, 0)
-Toggle_2.BorderSizePixel = 0
-Toggle_2.Position = UDim2.new(0.184306562, 0, 0.262467206, 0)
-Toggle_2.Size = UDim2.new(0, 60, 0, 35)
-
-UICorner_6.Parent = Toggle_2
-UICorner_6.CornerRadius = UDim.new(1, 0)
-
-TextButton_2.Parent = Toggle_2
+TextButton_2.Parent = Toggle
 TextButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_2.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_2.BorderSizePixel = 0
@@ -169,8 +161,33 @@ TextButton_2.Text = ""
 TextButton_2.TextColor3 = Color3.new(0, 0, 0)
 TextButton_2.TextSize = 14
 
-UICorner_7.Parent = TextButton_2
+UICorner_6.Parent = TextButton_2
+UICorner_6.CornerRadius = UDim.new(1, 0)
+
+Toggle_2.Name = "Toggle"
+Toggle_2.Parent = MAINFRAME
+Toggle_2.BackgroundColor3 = Color3.new(1, 0, 0)
+Toggle_2.BorderColor3 = Color3.new(0, 0, 0)
+Toggle_2.BorderSizePixel = 0
+Toggle_2.Position = UDim2.new(0.184306562, 0, 0.262467206, 0)
+Toggle_2.Size = UDim2.new(0, 60, 0, 35)
+
+UICorner_7.Parent = Toggle_2
 UICorner_7.CornerRadius = UDim.new(1, 0)
+
+TextButton_3.Parent = Toggle_2
+TextButton_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_3.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.415665686, 0, 0, 0)
+TextButton_3.Size = UDim2.new(0, 35, 0, 35)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = ""
+TextButton_3.TextColor3 = Color3.new(0, 0, 0)
+TextButton_3.TextSize = 14
+
+UICorner_8.Parent = TextButton_3
+UICorner_8.CornerRadius = UDim.new(1, 0)
 
 Frame_3.Parent = MAINFRAME
 Frame_3.BackgroundColor3 = Color3.new(0.0784314, 0.247059, 1)
@@ -191,8 +208,8 @@ TextLabel_3.Text = "AIM"
 TextLabel_3.TextColor3 = Color3.new(0.0784314, 0.247059, 1)
 TextLabel_3.TextSize = 32
 
-UICorner_8.Parent = TextLabel_3
-UICorner_8.CornerRadius = UDim.new(0, 20)
+UICorner_9.Parent = TextLabel_3
+UICorner_9.CornerRadius = UDim.new(0, 20)
 
 RadiusBox.Name = "RadiusBox"
 RadiusBox.Parent = MAINFRAME
@@ -200,31 +217,33 @@ RadiusBox.BackgroundColor3 = Color3.new(1, 1, 1)
 RadiusBox.BorderColor3 = Color3.new(0, 0, 0)
 RadiusBox.BorderSizePixel = 0
 RadiusBox.Position = UDim2.new(0.314810634, 0, 0.242036268, 0)
-RadiusBox.Size = UDim2.new(0, 119, 0, 49)
+RadiusBox.Size = UDim2.new(0, 92, 0, 49)
 RadiusBox.Font = Enum.Font.FredokaOne
+RadiusBox.PlaceholderColor3 = Color3.new(0.7, 0.7, 0.7)
 RadiusBox.PlaceholderText = "Radius"
 RadiusBox.Text = ""
 RadiusBox.TextColor3 = Color3.new(0, 0, 0)
 RadiusBox.TextSize = 30
 
-UICorner_9.Parent = RadiusBox
-UICorner_9.CornerRadius = UDim.new(0, 20)
+UICorner_10.Parent = RadiusBox
+UICorner_10.CornerRadius = UDim.new(0, 20)
 
 SmoothBox.Name = "SmoothBox"
 SmoothBox.Parent = MAINFRAME
 SmoothBox.BackgroundColor3 = Color3.new(1, 1, 1)
 SmoothBox.BorderColor3 = Color3.new(0, 0, 0)
 SmoothBox.BorderSizePixel = 0
-SmoothBox.Position = UDim2.new(0.550000012, 0, 0.245000005, 0)
-SmoothBox.Size = UDim2.new(0, 119, 0, 49)
+SmoothBox.Position = UDim2.new(0.49707967, 0, 0.239750415, 0)
+SmoothBox.Size = UDim2.new(0, 84, 0, 49)
 SmoothBox.Font = Enum.Font.FredokaOne
+SmoothBox.PlaceholderColor3 = Color3.new(0.7, 0.7, 0.7)
 SmoothBox.PlaceholderText = "Smooth"
 SmoothBox.Text = ""
 SmoothBox.TextColor3 = Color3.new(0, 0, 0)
 SmoothBox.TextSize = 25
 
-UICorner_10.Parent = SmoothBox
-UICorner_10.CornerRadius = UDim.new(0, 20)
+UICorner_11.Parent = SmoothBox
+UICorner_11.CornerRadius = UDim.new(0, 20)
 
 Toggle_3.Name = "Toggle"
 Toggle_3.Parent = MAINFRAME
@@ -234,22 +253,22 @@ Toggle_3.BorderSizePixel = 0
 Toggle_3.Position = UDim2.new(0.182481751, 0, 0.417322844, 0)
 Toggle_3.Size = UDim2.new(0, 60, 0, 35)
 
-UICorner_11.Parent = Toggle_3
-UICorner_11.CornerRadius = UDim.new(1, 0)
-
-TextButton_3.Parent = Toggle_3
-TextButton_3.BackgroundColor3 = Color3.new(1, 1, 1)
-TextButton_3.BorderColor3 = Color3.new(0, 0, 0)
-TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(0.415665686, 0, 0, 0)
-TextButton_3.Size = UDim2.new(0, 35, 0, 35)
-TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = ""
-TextButton_3.TextColor3 = Color3.new(0, 0, 0)
-TextButton_3.TextSize = 14
-
-UICorner_12.Parent = TextButton_3
+UICorner_12.Parent = Toggle_3
 UICorner_12.CornerRadius = UDim.new(1, 0)
+
+TextButton_4.Parent = Toggle_3
+TextButton_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_4.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.415665686, 0, 0, 0)
+TextButton_4.Size = UDim2.new(0, 35, 0, 35)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = ""
+TextButton_4.TextColor3 = Color3.new(0, 0, 0)
+TextButton_4.TextSize = 14
+
+UICorner_13.Parent = TextButton_4
+UICorner_13.CornerRadius = UDim.new(1, 0)
 
 TextLabel_4.Parent = MAINFRAME
 TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -263,48 +282,62 @@ TextLabel_4.Text = "AIM FOV"
 TextLabel_4.TextColor3 = Color3.new(0.0784314, 0.247059, 1)
 TextLabel_4.TextSize = 26
 
-UICorner_13.Parent = TextLabel_4
-UICorner_13.CornerRadius = UDim.new(0, 20)
+UICorner_14.Parent = TextLabel_4
+UICorner_14.CornerRadius = UDim.new(0, 20)
 
-Toggle_4.Name = "Toggle"
-Toggle_4.Parent = MAINFRAME
-Toggle_4.BackgroundColor3 = Color3.new(1, 0, 0)
-Toggle_4.BorderColor3 = Color3.new(0, 0, 0)
-Toggle_4.BorderSizePixel = 0
-Toggle_4.Position = UDim2.new(0.18065694, 0, 0.56167978, 0)
-Toggle_4.Size = UDim2.new(0, 60, 0, 35)
+BindBox.Name = "BindBox"
+BindBox.Parent = MAINFRAME
+BindBox.BackgroundColor3 = Color3.new(1, 1, 1)
+BindBox.BorderColor3 = Color3.new(0, 0, 0)
+BindBox.BorderSizePixel = 0
+BindBox.Position = UDim2.new(0.667602539, 0, 0.242036268, 0)
+BindBox.Size = UDim2.new(0, 60, 0, 49)
+BindBox.Font = Enum.Font.FredokaOne
+BindBox.PlaceholderColor3 = Color3.new(0.7, 0.7, 0.7)
+BindBox.PlaceholderText = "Bind"
+BindBox.Text = ""
+BindBox.TextColor3 = Color3.new(0, 0, 0)
+BindBox.TextSize = 25
 
-UICorner_14.Parent = Toggle_4
-UICorner_14.CornerRadius = UDim.new(1, 0)
+UICorner_15.Parent = BindBox
+UICorner_15.CornerRadius = UDim.new(0, 20)
 
-TextButton_4.Parent = Toggle_4
-TextButton_4.BackgroundColor3 = Color3.new(1, 1, 1)
-TextButton_4.BorderColor3 = Color3.new(0, 0, 0)
-TextButton_4.BorderSizePixel = 0
-TextButton_4.Position = UDim2.new(0.415665686, 0, 0, 0)
-TextButton_4.Size = UDim2.new(0, 35, 0, 35)
-TextButton_4.Font = Enum.Font.SourceSans
-TextButton_4.Text = ""
-TextButton_4.TextColor3 = Color3.new(0, 0, 0)
-TextButton_4.TextSize = 14
+CLOSED.Name = "CLOSED"
+CLOSED.Parent = MAINFRAME
+CLOSED.BackgroundColor3 = Color3.new(0.0784314, 0.247059, 1)
+CLOSED.BorderColor3 = Color3.new(0, 0, 0)
+CLOSED.BorderSizePixel = 0
+CLOSED.Position = UDim2.new(0.0018248175, 0, 0, 0)
+CLOSED.Size = UDim2.new(0, 547, 0, 32)
+CLOSED.Visible = false
 
-UICorner_15.Parent = TextButton_4
-UICorner_15.CornerRadius = UDim.new(1, 0)
+UICorner_16.Parent = CLOSED
+UICorner_16.CornerRadius = UDim.new(1, 0)
 
-TextLabel_5.Parent = MAINFRAME
-TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_5.Parent = CLOSED
+TextButton_5.BackgroundColor3 = Color3.new(0.0705882, 0.0392157, 0.423529)
+TextButton_5.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.924594045, 0, -0.0200004578, 0)
+TextButton_5.Size = UDim2.new(0, 32, 0, 31)
+TextButton_5.Font = Enum.Font.FredokaOne
+TextButton_5.Text = "O"
+TextButton_5.TextColor3 = Color3.new(0.0784314, 0.247059, 1)
+TextButton_5.TextSize = 33
+
+UICorner_17.Parent = TextButton_5
+
+TextLabel_5.Parent = CLOSED
+TextLabel_5.BackgroundColor3 = Color3.new(0.0784314, 0.247059, 1)
 TextLabel_5.BackgroundTransparency = 1
 TextLabel_5.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_5.BorderSizePixel = 0
-TextLabel_5.Position = UDim2.new(-0.00547445239, 0, 0.564304471, 0)
-TextLabel_5.Size = UDim2.new(0, 102, 0, 34)
+TextLabel_5.Position = UDim2.new(0.005391513, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 329, 0, 32)
 TextLabel_5.Font = Enum.Font.FredokaOne
-TextLabel_5.Text = "THRUWALL"
-TextLabel_5.TextColor3 = Color3.new(0.0784314, 0.247059, 1)
-TextLabel_5.TextSize = 19
-
-UICorner_16.Parent = TextLabel_5
-UICorner_16.CornerRadius = UDim.new(0, 20)
+TextLabel_5.Text = "KALI-YUGA SNIPER ARENA GUI"
+TextLabel_5.TextColor3 = Color3.new(0.0705882, 0.0392157, 0.423529)
+TextLabel_5.TextSize = 23
 
 HeadBtn.Name = "HeadBtn"
 HeadBtn.Parent = MAINFRAME
@@ -318,8 +351,8 @@ HeadBtn.Text = ""
 HeadBtn.TextColor3 = Color3.new(0, 0, 0)
 HeadBtn.TextSize = 14
 
-UICorner_17.Parent = HeadBtn
-UICorner_17.CornerRadius = UDim.new(0, 5)
+UICorner_18.Parent = HeadBtn
+UICorner_18.CornerRadius = UDim.new(0, 5)
 
 TorsoBtn.Name = "TorsoBtn"
 TorsoBtn.Parent = MAINFRAME
@@ -333,8 +366,8 @@ TorsoBtn.Text = ""
 TorsoBtn.TextColor3 = Color3.new(0, 0, 0)
 TorsoBtn.TextSize = 14
 
-UICorner_18.Parent = TorsoBtn
-UICorner_18.CornerRadius = UDim.new(0, 5)
+UICorner_19.Parent = TorsoBtn
+UICorner_19.CornerRadius = UDim.new(0, 5)
 
 LeftArmBtn.Name = "LeftArmBtn"
 LeftArmBtn.Parent = MAINFRAME
@@ -348,8 +381,8 @@ LeftArmBtn.Text = ""
 LeftArmBtn.TextColor3 = Color3.new(0, 0, 0)
 LeftArmBtn.TextSize = 14
 
-UICorner_19.Parent = LeftArmBtn
-UICorner_19.CornerRadius = UDim.new(0, 5)
+UICorner_20.Parent = LeftArmBtn
+UICorner_20.CornerRadius = UDim.new(0, 5)
 
 RightLegBtn.Name = "RightLegBtn"
 RightLegBtn.Parent = MAINFRAME
@@ -363,8 +396,8 @@ RightLegBtn.Text = ""
 RightLegBtn.TextColor3 = Color3.new(0, 0, 0)
 RightLegBtn.TextSize = 14
 
-UICorner_20.Parent = RightLegBtn
-UICorner_20.CornerRadius = UDim.new(0, 5)
+UICorner_21.Parent = RightLegBtn
+UICorner_21.CornerRadius = UDim.new(0, 5)
 
 LeftLegBtn.Name = "LeftLegBtn"
 LeftLegBtn.Parent = MAINFRAME
@@ -378,8 +411,8 @@ LeftLegBtn.Text = ""
 LeftLegBtn.TextColor3 = Color3.new(0, 0, 0)
 LeftLegBtn.TextSize = 14
 
-UICorner_21.Parent = LeftLegBtn
-UICorner_21.CornerRadius = UDim.new(0, 5)
+UICorner_22.Parent = LeftLegBtn
+UICorner_22.CornerRadius = UDim.new(0, 5)
 
 RightArmBtn.Name = "RightArmBtn"
 RightArmBtn.Parent = MAINFRAME
@@ -393,41 +426,12 @@ RightArmBtn.Text = ""
 RightArmBtn.TextColor3 = Color3.new(0, 0, 0)
 RightArmBtn.TextSize = 14
 
-UICorner_22.Parent = RightArmBtn
-UICorner_22.CornerRadius = UDim.new(0, 5)
-
-DistanceBox.Name = "DistanceBox"
-DistanceBox.Parent = MAINFRAME
-DistanceBox.BackgroundColor3 = Color3.new(1, 1, 1)
-DistanceBox.BorderColor3 = Color3.new(0, 0, 0)
-DistanceBox.BorderSizePixel = 0
-DistanceBox.Position = UDim2.new(0.782566071, 0, 0.244660944, 0)
-DistanceBox.Size = UDim2.new(0, 119, 0, 49)
-DistanceBox.Font = Enum.Font.FredokaOne
-DistanceBox.PlaceholderText = "Distance"
-DistanceBox.Text = ""
-DistanceBox.TextColor3 = Color3.new(0, 0, 0)
-DistanceBox.TextSize = 25
-
-UICorner_23.Parent = DistanceBox
-UICorner_23.CornerRadius = UDim.new(0, 20)
-
-RadiusCircle.Name = "RadiusCircle"
-RadiusCircle.Parent = ScreenGui
-RadiusCircle.BackgroundColor3 = Color3.new(1, 1, 1)
-RadiusCircle.BackgroundTransparency = 0.699999988079071
-RadiusCircle.BorderColor3 = Color3.new(0, 0, 0)
-RadiusCircle.BorderSizePixel = 0
-RadiusCircle.Position = UDim2.new(0.100000001, 0, 0.100000001, 0)
-RadiusCircle.Size = UDim2.new(0, 100, 0, 100)
-RadiusCircle.Visible = false
-
-UICorner_24.Parent = RadiusCircle
-UICorner_24.CornerRadius = UDim.new(1, 0)
+UICorner_23.Parent = RightArmBtn
+UICorner_23.CornerRadius = UDim.new(0, 5)
 
 -- Scripts
 
-local function ZCMUDY_fake_script() -- MAINFRAME.PartsScript 
+local function FXLNF_fake_script() -- MAINFRAME.PartsScript 
 	local script = Instance.new('LocalScript', MAINFRAME)
 
 	local mainFrame = script.Parent
@@ -465,9 +469,9 @@ local function ZCMUDY_fake_script() -- MAINFRAME.PartsScript
 		end
 	end
 end
-coroutine.wrap(ZCMUDY_fake_script)()
-local function PYSLSAS_fake_script() -- TextButton.ESP 
-	local script = Instance.new('LocalScript', TextButton)
+coroutine.wrap(FXLNF_fake_script)()
+local function VVNEFL_fake_script() -- TextButton_2.ESP 
+	local script = Instance.new('LocalScript', TextButton_2)
 
 	-- ==============================================
 	-- ПОЛНЫЙ СКРИПТ ПЕРЕКЛЮЧАТЕЛЯ + ESP
@@ -640,20 +644,23 @@ local function PYSLSAS_fake_script() -- TextButton.ESP
 	setESPEnabled(false)
 	animateSwitch(false)
 end
-coroutine.wrap(PYSLSAS_fake_script)()
-local function SFGCU_fake_script() -- TextButton_2.Aim 
-	local script = Instance.new('LocalScript', TextButton_2)
+coroutine.wrap(VVNEFL_fake_script)()
+local function JXMELY_fake_script() -- TextButton_3.Aim 
+	local script = Instance.new('LocalScript', TextButton_3)
 
 	local knob = script.Parent
 	local bg = knob.Parent
 	local mainFrame = bg.Parent
 	local smoothBox = mainFrame:FindFirstChild("SmoothBox")
-	local distanceBox = mainFrame:FindFirstChild("DistanceBox")
+	local radiusBox = mainFrame:FindFirstChild("RadiusBox")
+	local bindBox = mainFrame:FindFirstChild("BindBox")
 	
 	local OFF_POS = UDim2.new(-0.001, 0)
 	local ON_POS = UDim2.new(0.416, 0)
 	local toggled = false
+	local boundKey = nil
 	
+	-- Анимация тумблера
 	local function animateSwitch(isOn)
 		local ts = game:GetService("TweenService")
 		local ti = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
@@ -673,9 +680,32 @@ local function SFGCU_fake_script() -- TextButton_2.Aim
 		return val and math.clamp(val, 0.05, 0.5) or 0.15
 	end
 	
-	local function getMaxDistance()
-		local val = distanceBox and tonumber(distanceBox.Text)
-		return val and math.clamp(val, 10, 1000) or 100
+	local function getRadius()
+		local val = radiusBox and tonumber(radiusBox.Text)
+		return val and math.clamp(val, 30, 500) or 100
+	end
+	
+	local function isAlive(character)
+		local humanoid = character and character:FindFirstChild("Humanoid")
+		return humanoid and humanoid.Health > 0
+	end
+	
+	-- Поиск частей тела
+	local function findBodyPart(character, partType)
+		if partType == "Head" then
+			return character:FindFirstChild("Head")
+		elseif partType == "Torso" then
+			return character:FindFirstChild("Torso") or character:FindFirstChild("UpperTorso")
+		elseif partType == "LeftArm" then
+			return character:FindFirstChild("LeftArm") or character:FindFirstChild("LeftUpperArm")
+		elseif partType == "RightArm" then
+			return character:FindFirstChild("RightArm") or character:FindFirstChild("RightUpperArm")
+		elseif partType == "LeftLeg" then
+			return character:FindFirstChild("LeftLeg") or character:FindFirstChild("LeftLowerLeg")
+		elseif partType == "RightLeg" then
+			return character:FindFirstChild("RightLeg") or character:FindFirstChild("RightLowerLeg")
+		end
+		return nil
 	end
 	
 	local function getAverageAimPosition(character)
@@ -685,7 +715,7 @@ local function SFGCU_fake_script() -- TextButton_2.Aim
 	
 		for partName, enabled in pairs(selected) do
 			if enabled then
-				local part = character:FindFirstChild(partName)
+				local part = findBodyPart(character, partName)
 				if part and part:IsA("BasePart") then
 					totalPos = totalPos + part.Position
 					count = count + 1
@@ -700,30 +730,15 @@ local function SFGCU_fake_script() -- TextButton_2.Aim
 		return hrp and hrp.Position or character.PrimaryPart.Position
 	end
 	
-	local function isAlive(character)
-		local humanoid = character and character:FindFirstChild("Humanoid")
-		return humanoid and humanoid.Health > 0
-	end
-	
-	local function isIn3DRange(character)
-		local hrp = character and character:FindFirstChild("HumanoidRootPart")
-		if not hrp then return false end
-	
-		local cameraPos = workspace.CurrentCamera.CFrame.Position
-		local targetPos = getAverageAimPosition(character)
-		local distance = (targetPos - cameraPos).Magnitude
-	
-		return distance <= getMaxDistance()
-	end
-	
 	local function getClosestEnemy()
 		local cam = workspace.CurrentCamera
-		local center = Vector2.new(mouse.ViewSizeX / 2, mouse.ViewSizeY / 2)
+		local radius = getRadius()
 		local closest = nil
-		local closestDist = 9999
+		local closestDist = radius
+		local center = Vector2.new(mouse.ViewSizeX / 2, mouse.ViewSizeY / 2)
 	
 		for _, plr in ipairs(Players:GetPlayers()) do
-			if plr ~= LocalPlayer and plr.Character and isAlive(plr.Character) and isIn3DRange(plr.Character) then
+			if plr ~= LocalPlayer and plr.Character and isAlive(plr.Character) then
 				local targetPos = getAverageAimPosition(plr.Character)
 				local pos, onScreen = cam:WorldToScreenPoint(targetPos)
 				if onScreen then
@@ -739,17 +754,18 @@ local function SFGCU_fake_script() -- TextButton_2.Aim
 	end
 	
 	local function getTarget()
-		if lockedTarget and lockedTarget.Character and isAlive(lockedTarget.Character) and isIn3DRange(lockedTarget.Character) then
+		if lockedTarget and lockedTarget.Character and isAlive(lockedTarget.Character) then
 			return lockedTarget
 		end
 		lockedTarget = getClosestEnemy()
 		return lockedTarget
 	end
 	
+	-- Поворот камеры
 	game:GetService("RunService").RenderStepped:Connect(function()
 		if not aimbotActive then return end
 		local target = getTarget()
-		if target and target.Character and isAlive(target.Character) then
+		if target and target.Character then
 			local targetPos = getAverageAimPosition(target.Character)
 			local cam = workspace.CurrentCamera
 			local targetCF = CFrame.new(cam.CFrame.Position, targetPos)
@@ -757,20 +773,56 @@ local function SFGCU_fake_script() -- TextButton_2.Aim
 		end
 	end)
 	
+	-- Переключение аимбота
+	local function toggleAimbot(state)
+		aimbotActive = state
+		lockedTarget = nil
+		print(state and "✅ Аимбот ВКЛ" or "❌ Аимбот ВЫКЛ")
+	end
+	
+	-- Нажатие на тумблер
 	knob.MouseButton1Click:Connect(function()
 		toggled = not toggled
 		animateSwitch(toggled)
-		aimbotActive = toggled
-		lockedTarget = nil
-		print(toggled and "✅ Аимбот ВКЛ" or "❌ Аимбот ВЫКЛ")
+		toggleAimbot(toggled)
 	end)
 	
+	-- Бинд клавиши
+	if bindBox then
+		bindBox.FocusLost:Connect(function()
+			local input = bindBox.Text:upper()
+			if input == "" or #input > 1 then
+				bindBox.Text = ""
+				return
+			end
+			local keyCode = Enum.KeyCode[input]
+			if keyCode then
+				boundKey = keyCode
+				bindBox.Text = input .. " ✓"
+				print("✅ Бинд установлен на: " .. input)
+			else
+				bindBox.Text = ""
+				print("❌ Неверная клавиша: " .. input)
+			end
+		end)
+	end
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+		if boundKey and input.KeyCode == boundKey then
+			toggled = not toggled
+			animateSwitch(toggled)
+			toggleAimbot(toggled)
+		end
+	end)
+	
+	-- Начальное состояние
 	animateSwitch(false)
-	aimbotActive = false
+	toggleAimbot(false)
 end
-coroutine.wrap(SFGCU_fake_script)()
-local function EOXFTG_fake_script() -- TextButton_3.AimFov 
-	local script = Instance.new('LocalScript', TextButton_3)
+coroutine.wrap(JXMELY_fake_script)()
+local function GHLVTX_fake_script() -- TextButton_4.AimFov 
+	local script = Instance.new('LocalScript', TextButton_4)
 
 	local knob = script.Parent
 	local bg = knob.Parent
@@ -855,35 +907,88 @@ local function EOXFTG_fake_script() -- TextButton_3.AimFov
 	updateCircleSizeAndPosition()
 	animateSwitch(false)
 end
-coroutine.wrap(EOXFTG_fake_script)()
-local function FHUKV_fake_script() -- TextButton_4.Aim 
-	local script = Instance.new('LocalScript', TextButton_4)
+coroutine.wrap(GHLVTX_fake_script)()
+local function TEEP_fake_script() -- BindBox.LocalScript 
+	local script = Instance.new('LocalScript', BindBox)
 
-	local knob = script.Parent
-	local bg = knob.Parent
-	local OFF_POS = UDim2.new(-0.001, 0)
-	local ON_POS = UDim2.new(0.416, 0)
-	local toggled = false
+	-- Вставь этот скрипт в MAINFRAME
+	local UserInputService = game:GetService("UserInputService")
+	local mainFrame = script.Parent
 	
-	local function animateSwitch(isOn)
-		local ts = game:GetService("TweenService")
-		local ti = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-		ts:Create(knob, ti, {Position = isOn and ON_POS or OFF_POS}):Play()
-		ts:Create(bg, ti, {BackgroundColor3 = isOn and Color3.fromRGB(0, 200, 0) or Color3.fromRGB(150, 150, 150)}):Play()
+	-- Находим элементы
+	local bindBox = mainFrame:FindFirstChild("BindBox")
+	local aimbotToggle = mainFrame:FindFirstChild("Toggle") -- твой тумблер аимбота
+	
+	print("🔍 Скрипт биндов запущен")
+	print("🔍 BindBox найден:", bindBox ~= nil)
+	print("🔍 AimbotToggle найден:", aimbotToggle ~= nil)
+	
+	if not bindBox then
+		warn("❌ BindBox не найден!")
+		return
 	end
 	
-	knob.MouseButton1Click:Connect(function()
-		toggled = not toggled
-		animateSwitch(toggled)
-		_G.ThruwallEnabled = toggled
-		print("🧱 ThruWall:", toggled and "ВКЛ (вижу через стены)" or "ВЫКЛ (только видимые)")
+	if not aimbotToggle then
+		warn("❌ Тумблер аимбота не найден!")
+		return
+	end
+	
+	local boundKey = nil
+	
+	-- Функция для имитации нажатия на тумблер
+	local function pressAimbotToggle()
+		local knob = aimbotToggle:FindFirstChild("TextButton")
+		if knob then
+			knob.MouseButton1Click:Fire()
+			print("🎯 Аимбот переключён через бинд")
+		else
+			warn("❌ Кнопка-шарик не найдена в тумблере")
+		end
+	end
+	
+	-- Обработка ввода в текстбокс
+	bindBox.FocusLost:Connect(function()
+		local input = bindBox.Text:upper()
+		print("📝 Введено в BindBox:", input)
+	
+		if input == "" or #input > 1 then
+			bindBox.Text = ""
+			print("❌ Введите одну букву или цифру")
+			return
+		end
+	
+		-- Пробуем найти KeyCode по имени
+		local keyCode = Enum.KeyCode[input]
+	
+		-- Если не нашли, пробуем цифры
+		if not keyCode and tonumber(input) then
+			keyCode = Enum.KeyCode["Keypad" .. input] or Enum.KeyCode[input]
+		end
+	
+		if keyCode then
+			boundKey = keyCode
+			bindBox.Text = input .. " ✓"
+			print("✅ Бинд установлен на клавишу:", input, "(" .. tostring(keyCode) .. ")")
+		else
+			bindBox.Text = ""
+			print("❌ Неверная клавиша:", input)
+		end
 	end)
 	
-	animateSwitch(false)
-	_G.ThruwallEnabled = false
+	-- Обработка нажатия клавиши
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+	
+		if boundKey and input.KeyCode == boundKey then
+			print("🔑 Нажата забинденная клавиша:", input.KeyCode.Name)
+			pressAimbotToggle()
+		end
+	end)
+	
+	print("✅ Система биндов готова. Введи клавишу в BindBox")
 end
-coroutine.wrap(FHUKV_fake_script)()
-local function APUVYAB_fake_script() -- MAINFRAME.LocalScript 
+coroutine.wrap(TEEP_fake_script)()
+local function TFYQ_fake_script() -- MAINFRAME.LocalScript 
 	local script = Instance.new('LocalScript', MAINFRAME)
 
 	local player = game.Players.LocalPlayer
@@ -918,4 +1023,4 @@ local function APUVYAB_fake_script() -- MAINFRAME.LocalScript
 		end
 	end)
 end
-coroutine.wrap(APUVYAB_fake_script)()
+coroutine.wrap(TFYQ_fake_script)()
